@@ -8,7 +8,7 @@ app = Flask(__name__)
 def receiver():
     # create output directory
     directory = os.path.join(os.getcwd(), "received")
-    os.makedirs(directory, exists_ok=True)
+    os.makedirs(directory, exist_ok=True)
 
     # get entities from request and write each of them to a file
     entities = request.get_json()
