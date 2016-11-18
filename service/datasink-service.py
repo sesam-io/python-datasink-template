@@ -12,6 +12,9 @@ def receiver():
 
     # get entities from request and write each of them to a file
     entities = request.get_json()
+    if isinstance(entities, list):
+        entities = [entities]
+
     for entity in entities:
         entity_id = entity["_id"]
         filename = os.path.join(directory, entity_id + ".json")
