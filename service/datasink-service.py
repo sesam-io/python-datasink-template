@@ -12,7 +12,7 @@ def receiver():
 
     # get entities from request and write each of them to a file
     entities = request.get_json()
-    if isinstance(entities, list):
+    if not isinstance(entities, list):
         entities = [entities]
 
     for entity in entities:
