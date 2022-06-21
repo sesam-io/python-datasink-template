@@ -2,7 +2,7 @@
 python-datasink-template
 ========================
 
-A python micro service template for receiving a JSON entity stream from a Sesam service instance. 
+A python microservice template for receiving a JSON entity stream from a Sesam service instance.
 
 ::
 
@@ -12,6 +12,6 @@ A python micro service template for receiving a JSON entity stream from a Sesam 
    * Debugger is active!
    * Debugger pin code: 260-787-156
 
-The service listens on port 5001.
+The service listens on port 5001. The port number can be changed by passing in the PORT environment variable.
 
 JSON entities can be posted to 'http://localhost:5001/receiver'.
